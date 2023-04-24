@@ -108,7 +108,7 @@ public class IndexController {
      */
     
     //METODO POST-CON FORMULARIO PARA OBTENER DATOS Y MOSTRARLOS EN LA PAGINA
-	 public static final String FORM_VIEW = "formulario";
+	public static final String FORM_VIEW = "formulario";
 	    public static final String RESULT_VIEW = "vista_form";
 
 	    
@@ -125,5 +125,29 @@ public class IndexController {
 	        mav.addObject("persona", personaForm);
 	        return mav;
 	    }
+	    
+	
+	    
+	//metodo sin model(clase persona)
+		/* public static final String VISTA_FORM = "form";
+		 public static final String VISTA_RESULT = "saludo";
+	   
+		 //formulario
+		 @GetMapping(value = "/index")
+		 public String index() {
+	    	return VISTA_FORM;
+	    }
+	    
+	    
+		 
+		 //resultado
+		 @PostMapping(value="/index")
+	    public String indexPost(String nombre, Model model) {
+	    
+	    	model.addAttribute("nombre", nombre);
+	    	return VISTA_RESULT;
+	    }
+	    
+	    */
 	
 }
